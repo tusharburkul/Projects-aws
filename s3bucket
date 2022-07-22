@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+	"Statement":[
+		{
+			"Effect":"Allow",
+			"Action":[
+					"s3:GetBucketLocation",
+					"s3:ListAllMybuckets"
+				],
+				"Resource":"arn:aws:s3:::"
+
+				},
+				{
+					"Effect":"Allow",
+					"Action":"S3:*",
+					"Resource":[
+						"arn:aws:s3:::demandfile",
+						"arn:aws:s3:::demandfile"
+
+						]
+				}
+	]
+}
